@@ -891,6 +891,11 @@ export function createInitialTypes(): Map<string, Type> {
             serialize(buffer: SerialBuffer, data: string) { buffer.pushName(data); },
             deserialize(buffer: SerialBuffer) { return buffer.getName(); },
         }),
+        account_name: createType({
+            name: 'account_name',
+            serialize(buffer: SerialBuffer, data: string) { buffer.pushName(data); },
+            deserialize(buffer: SerialBuffer) { return buffer.getName(); },
+        }),
         time_point: createType({
             name: 'time_point',
             serialize(buffer: SerialBuffer, data: string) { buffer.pushNumberAsUint64(dateToTimePoint(data)); },
