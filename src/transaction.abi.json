@@ -110,6 +110,10 @@
                 {
                     "name": "transaction_extensions",
                     "type": "extension[]"
+                },
+                {
+                    "name": "fee",
+                    "type": "asset"
                 }
             ]
         }

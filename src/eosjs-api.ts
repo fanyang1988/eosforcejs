@@ -160,6 +160,7 @@ export class Api {
             context_free_actions: [],
             actions: [],
             transaction_extensions: [],
+            fee: '0.0000 EOS',
             ...transaction,
         });
         return buffer.asUint8Array();
